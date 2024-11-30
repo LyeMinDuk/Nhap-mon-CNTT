@@ -14,7 +14,7 @@
 }
 .calculator{
     width: 100%;
-    max-width: 800px    ;
+    max-width: 900px;
     margin-top: 10%;
     margin-left: 10%;
     background: #fae8e0;
@@ -41,6 +41,7 @@
     background: #b6e2d3;
     display: flex;
     align-items: center;
+    border-radius: 10px;
 }
 .inputBox input{
     flex: 1;
@@ -56,18 +57,22 @@
     margin-left: 40px;
     padding: 15px 30px;
     border-radius: 5px;
-    /* font-weight: 500; */
     cursor: pointer;
     color: #000;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
 }
-.inputBox p{
+.outputBox{
     margin: 40px 0;
+    padding: 35px;
+    background: #b6e2d3;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.outputBox p{
     font-size: 20px;
     display: flex;
-}
-.inputBox p p{
-    margin: 40px 0;
-    font-size: 20px;
-    display: flex;
+    margin-left: 20px;
 }
