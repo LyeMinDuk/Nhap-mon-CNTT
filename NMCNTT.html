@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nhập môn CNTT</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1 id="value">
+                Công cụ chuyển đổi đơn vị
+                <br>
+                <p>Nhóm 24</p>
+            </h1>
+            <div class="inputBox">
+                <input type="number" id="input">
+                <select id="first" onchange="Selection()">
+                    <option selected></option>
+                    <option value="doDai">Độ dài</option> 
+                    <option value="khoiLuong">Khối lượng</option>
+                    <option value="vanToc">Vận tốc</option>
+                    <option value="apSuat">Áp suất</option>
+                    <option value="nangLuong">Năng lượng</option>
+                    <option value="congSuat">Công suất</option>
+                    <option value="nhietDo">Nhiệt độ</option>
+                </select>
+                <select id="second">
+                    <option selected></option>
+                </select>
+                <button onclick="">Chuyển đổi</button>
+                
+            </div>
+            <p id="output"></p>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>

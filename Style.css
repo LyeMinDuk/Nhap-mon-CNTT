@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand";
+    
+}
+.container{
+    background: linear-gradient( 135deg, #ef7c8e, #f6a7e4);
+    color: #000;
+    width: 100%;
+    min-height: 100vh;
+    padding: 1px;
+}
+.calculator{
+    width: 100%;
+    max-width: 800px    ;
+    margin-top: 10%;
+    margin-left: 10%;
+    background: #fae8e0;
+    padding: 35px;
+    border-radius: 10px;
+}
+.calculator h1{
+    font-size: 60px;
+}
+.calculator p{
+    font-size: 45px;
+}
+.inputBox select{
+    flex: 1;
+    padding: 14px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 0;
+
+}
+.inputBox{
+    margin: 40px 0;
+    padding: 35px;
+    background: #b6e2d3;
+    display: flex;
+    align-items: center;
+}
+.inputBox input{
+    flex: 1;
+    padding: 14px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 0;
+
+}
+.inputBox button{
+    background: #ffc9b9;
+    border: 0;
+    margin-left: 40px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    /* font-weight: 500; */
+    cursor: pointer;
+    color: #000;
+    font-size: 18px;
+}
+.inputBox p{
+    margin: 40px 0;
+    font-size: 20px;
+    display: flex;
+}
+.inputBox p p{
+    margin: 40px 0;
+    font-size: 20px;
+    display: flex;
+}
