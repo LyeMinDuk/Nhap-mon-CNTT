@@ -1,5 +1,4 @@
 var input = document.getElementById("input");
-var output = document.getElementById("output");
 var firstSelect = document.getElementById("first");
 var secondSelect = document.getElementById("second");
 
@@ -22,11 +21,13 @@ var Selection = () => {
         secondSelect.appendChild(luaChonMoi);
     }
 }
-var change = (n) => {
+var change = () => {
     let dauVao = input.value;
     let kieu = secondSelect.value;
     console.log(dauVao);
-    if (kieu == "in => cm") {
+    if (dauVao < 0) {
+        output.innerHTML = "Giá trị không hợp lệ";
+    } else if (kieu == "in => cm") {
         output.innerHTML = `${dauVao * 2.34} cm`;
     } else if (kieu == "cm => in") {
         output.innerHTML = `${dauVao / 2.34} in`;
@@ -62,5 +63,9 @@ var change = (n) => {
         output.innerHTML = `${(dauVao - 32) * 5 / 9} °C`;
     } else if (kieu == "°C => °F") {
         output.innerHTML = `${dauVao * 1.8 + 32} °F`;
+    } else if (dauVao == "") {
+        output.innerHTML = "Chưa nhập giá trị";
+    } else {
+        output.innerHTML = "Chưa chọn kiểu quy đổi";
     }
 }
